@@ -1,0 +1,210 @@
+/* Onderstaande code definieert kleuren die door gebruikt worden door de custom
+rode skin en VOCUS Nitro */
+:root {
+  --vocus-red: #c10009;
+  --vocus-medium-red: #750005;
+  --vocus-dark-red: #851811;
+  --vocus-red-fg: #ffffff;
+  --vocus-red-contrast: #000000;
+  --vocus-gray: #22262D;
+  --vocus-gray-fg: #ffffff;
+  --vocus-gray-contrast: #000000;
+  --vocus-dark-gray: #191C21;
+  --vocus-gray-accent: #374151;
+}
+
+/* Deze code zorgt ervoor dat alles de juiste VOCUS kleuren gebruikt */
+a { color: var(--vocus-red); }
+a:hover { color: var(--vocus-medium-red); }
+a:focus { color: var(--vocus-medium-red); }
+a:active { color: var(--vocus-medium-red); }
+
+.btn-primary {
+  background: var(--vocus-red);
+  color: var(--vocus-red-fg);
+  border-color: var(--vocus-medium-red);
+}
+.btn-primary:hover {
+  border-color: var(--vocus-medium-red);
+}
+
+.btn-primary:hover { background: var(--vocus-medium-red); }
+.btn-primary:focus { background: var(--vocus-medium-red); }
+.btn-primary:active { background: var(--vocus-medium-red); }
+
+.headline :is(h1, h2, h3, h4, h5, h6) {
+  border-bottom: 2px solid var(--vocus-red) !important;
+}
+
+footer .headline {
+  border-bottom: 1px solid var(--vocus-gray-accent) !important;
+}
+
+/* Deze code stond er al, en doet:
+- zorgt ervoor dat plaatjes in de evenementen module niet gecropt worden.
+- zorgt ervoor dat een heading img (breed plaatje bovenaan pagina) een vaste hoogte heeft.
+*/
+.module-events .paragraphs .img-responsive { 
+  object-fit: contain !important;
+  object-position: center; 
+}
+.heading-image { 
+  padding-bottom: 25%; 
+  height: 600px;
+}
+
+/* Fix voor gecropte afbeeldingen in de nieuwsfeed (is zelfde als bovenstaand) */
+.publication-item .embed-responsive .embed-responsive-img,
+.heading-image img {  
+  object-fit: contain !important;  
+}
+
+/* VOCUS skin voor Congressus, geschreven door Robin. */
+
+/* De header: rood!! */
+body > header {  
+  background: var(--vocus-red);
+}
+
+/* Het menu:
+- geen rood streepje meer onder items
+- standaard wit op rood
+- muisover maakt het zwart op wit
+- maak de pijltjes ook dezelfde kleuren als de tekst
+*/
+.sf-menu li {  
+  border-bottom: none !important;  
+}
+.sf-menu > li > ul {  
+  border-top: none !important;  
+}  
+.sf-menu a {  
+  color: var(--vocus-red-fg);  
+}  
+.sf-menu > li:hover,
+.sf-menu > li.sfHover {  
+  background: var(--vocus-red-fg);  
+}
+.sf-menu > li:hover a,
+.sf-menu > li.sfHover a,
+.sf-menu > li ul li a {  
+  color: var(--vocus-red-contrast) !important;
+}
+.sf-menu.sf-arrows .has-submenu:not(.sfHover) .sf-with-ul::after {
+  border-top-color: var(--vocus-red-fg) !important;
+}
+
+/* Modiel menu:
+- standaard wit op rood
+- geopende menu items zien eruit als bij muisover
+- geselecteerd item is dikgedrukt, en niet rood op rood
+- iets meer marge aan de linkerkant
+*/
+.navbar-toggle,
+.top-mobile a,
+.submenu-trigger {
+  color: var(--vocus-red-fg) !important;
+}
+.navbar-toggle {
+  border-color: var(--vocus-red-fg) !important;
+}
+.sf-menu
+:is(li:hover, li.has-submenu.is-active)
+:is(.submenu-trigger, a) {
+  color: var(--vocus-red-contrast) !important;
+}
+.sf-menu li.active a {
+  color: var(--vocus-red-fg) !important;
+  font-weight: bold !important;
+}
+.sf-menu li.active:hover a {
+  color: var(--vocus-red-contrast) !important;
+}
+li.has-submenu.is-active a {
+  color: var(--vocus-red-contrast);
+}
+li.has-submenu.is-active {
+  background: var(--vocus-red-fg);
+}
+.navbar-collapse.in > ul > li > a {
+  padding-left: 10px !important;
+}
+
+/* Zorgt ervoor dat het menu een stuk breder is */
+header .container {  
+  margin: 0;  
+  width: 100%;  
+}
+.header-nav,  
+.header-nav-top .login p {  
+  max-width: 1536px;  
+  margin: 0 auto !important;
+}
+
+/*
+De login balk bovenin:
+- positionering
+- standaard wit op donkerrood
+- muisover maakt het zwart op wit
+*/
+.header-nav-top .login {  
+  background: var(--vocus-dark-red);  
+  margin: -10px -20px;  
+  padding: 0 2em;  
+  margin-bottom: 2em !important;  
+}
+.header-nav-top .login p {  
+  color: var(--vocus-red-fg) !important;
+}
+.header-nav-top .login p a {  
+  color: var(--vocus-red-fg) !important;
+  line-height: 2.2;
+}
+.header-nav-top .login p a,
+.header-nav-top .login p:not(:has(a)) {
+  padding: 0.5em !important;
+}
+.header-nav-top .login p a:hover {  
+  color: var(--vocus-red-contrast) !important;  
+  background: var(--vocus-red-fg) !important;  
+}
+
+/* De footer: wit op donkergrijs */
+  
+footer {  
+  background: var(--vocus-gray);  
+  color: var(--vocus-gray-fg);
+}
+footer a,
+section#copyright a {  
+  color: var(--vocus-gray-fg);
+}  
+
+/* Klein donkerder balkje onderaan */
+section#copyright {  
+  background: var(--vocus-dark-gray);  
+  color: var(--vocus-gray-fg);
+}
+
+/* Centreert de tekst */
+section#copyright .container > div {  
+  justify-content: center !important;  
+}
+
+/* Haalt het congressus logo weg*/
+section#copyright .container > div > div:last-child {  
+  display: none !important;  
+}
+
+/* Fix besturen alignment */
+#content:has(.besturen) img {
+  width: 100% !important;
+  height: auto;
+  object-fit: contain !important;
+  aspect-ratio: 4/3;
+}
+
+/* Feedback van Ilse: hoofdletters op inlogscherm */
+.checkbox label:first-letter {
+  text-transform: capitalize;
+}

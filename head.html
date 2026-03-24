@@ -1,0 +1,32 @@
+<script>
+  // VOCUS Nitro
+  // Injecteert CSS voor verschillende thema's bij het laden van de pagina.
+  // De waarde van 'nitroTheme' kan door het lid worden ingesteld op de
+  // pagina 'VOCUS Nitro'.
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const theme = localStorage.getItem("nitroTheme");
+
+    if (!theme || theme === "default") return;
+
+    let css = "";
+
+    if (theme === "chiel") {
+      css = `...`;
+    }
+
+    if (theme === "minecraft") {
+      css = `...`;
+    }
+
+    if (theme === "graphicdesign") {
+      css = `...`;
+    }
+
+    if (css) {
+      const style = document.createElement("style");
+      style.textContent = css;
+      document.head.appendChild(style);
+    }
+  });
+</script>

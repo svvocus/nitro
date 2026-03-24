@@ -1,0 +1,23 @@
+<form class="form">
+  <div class="form-group">
+    <label for="nitroTheme">Kies een thema:</label>
+    <select id="nitroTheme" class="form-control">
+      <option value="default">Standaard</option>
+      <option value="chiel">Chiel</option>
+      <option value="minecraft">Minecraft</option>
+      <option value="graphicdesign">Graphic Design is my Passion</option>
+    </select>
+  </div>
+</form>
+
+<script>
+  const select = document.getElementById("nitroTheme");
+  select.addEventListener("change", function () {
+    localStorage.setItem("nitroTheme", this.value);
+    window.location.reload();
+  });
+  const savedTheme = localStorage.getItem("nitroTheme");
+  if (savedTheme) {
+    select.value = savedTheme;
+  }
+</script>

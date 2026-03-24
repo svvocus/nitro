@@ -1,0 +1,16 @@
+:root {
+  --vocus-red: #fd21ef;
+  --vocus-dark-red: #171717;
+}
+
+:not(.fa) {
+  font-family: 'Comic Sans MS' !important;
+}
+
+body > header {
+  background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 19%, rgba(237, 221, 83, 1) 40%, rgba(237, 157, 83, 1) 57%, rgba(237, 86, 83, 1) 75%, rgba(237, 83, 216, 1) 89%);
+}
+
+.content-header-background {
+  filter: hue-rotate(-48deg);
+}

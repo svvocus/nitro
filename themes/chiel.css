@@ -1,0 +1,30 @@
+:root {
+  --vocus-red: #fda821;
+  --vocus-red-fg: white;
+  --vocus-dark-red: #552d0d;
+  --vocus-red-contrast: black;
+  --vocus-gray: #552d0d;
+  --vocus-dark-gray: #3b1f08;
+  --vocus-gray-accent: #6a3811;
+}
+
+.btn-primary {
+  --vocus-medium-red: #f3a11eff;
+}
+
+.header-nav-top {
+  --vocus-red-fg: white;
+  --vocus-red-contrast: black;
+}
+
+.header-menu .sf-menu a {
+  font-weight: bold !important;
+}
+
+body > header > div {
+  background: url("https://memberpagina.svvocus.nl/_media/3767803/3f49ef1f3ff5467e8a27eea26a07033e/download");
+}
+
+.content-header-background {
+  filter: hue-rotate(30deg);
+}
