@@ -8,7 +8,15 @@
 }
 
 body > header {
-  background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 19%, rgba(237, 221, 83, 1) 40%, rgba(237, 157, 83, 1) 57%, rgba(237, 86, 83, 1) 75%, rgba(237, 83, 216, 1) 89%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 140, 255, 1) 0%,
+    rgba(0, 255, 102, 1) 19%,
+    rgba(255, 230, 0, 1) 40%,
+    rgba(255, 128, 0, 1) 57%,
+    rgba(255, 0, 0, 1) 75%,
+    rgba(255, 0, 220, 1) 89%
+  );
 }
 
 .content-header-background {
