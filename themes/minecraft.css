@@ -38,3 +38,15 @@ body > header > div {
 .content-header-background {
   filter: hue-rotate(-271deg) brightness(1.9) opacity(0.8);
 }
+
+.module-events .content-header-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: hue-rotate(271deg) opacity(.8);
+  background-image: url(https://memberpagina.svvocus.nl/_media/3928470/1b58685307f6459099d8f629e04e541f/download);
+}
