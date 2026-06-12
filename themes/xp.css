@@ -1,0 +1,36 @@
+:root {
+  --vocus-red: #e68b2c;
+  --vocus-medium-red: #750005;
+  --vocus-dark-red: #851811;
+  --vocus-red-fg: #ffffff;
+  --vocus-red-contrast: #000000;
+  --vocus-gray: #22262D;
+  --vocus-gray-fg: #ffffff;
+  --vocus-gray-contrast: #000000;
+  --vocus-dark-gray: #191C21;
+  --vocus-gray-accent: #374151;
+}
+
+body > header > div {
+  background: url("https://memberpagina.svvocus.nl/_media/3921502/7ccb3699da1347f594997708159b07a3/download");
+}
+
+.header-nav-top .login {
+  font-family: Trebuchet MS;
+  background: linear-gradient(180deg,#0997ff,#0053ee 8%,#0050ee 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7);
+  padding: 3px 5px 3px 3px;
+  border-top: 1px solid #0831d9;
+  border-left: 1px solid #0831d9;
+  border-right: 1px solid #001ea0;
+  font-size: 13px;
+  text-shadow: 1px 1px #0f1089;
+}
+
+.header-nav-top a:hover {
+  text-shadow: none;
+}
+
+body, #content {
+  background: #ece9d8;
+  color: #222222;
+}
